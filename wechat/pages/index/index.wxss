@@ -1,0 +1,136 @@
+/**index.wxss**/
+
+page {
+  width: 100%;
+}
+
+.container {
+  padding: 0rpx;
+  width: 100%;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 0rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.log-box {
+  margin: 30rpx 0 80rpx;
+  width: 90%;
+  height: 350rpx;
+  background: #f5fffa;
+  /* overflow: scroll; */
+}
+
+.form-container {
+  width: 700rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  width: 70%;
+  border: 1px solid black;
+}
+
+.btn-send {
+  margin-right: 0;
+  width: 20%;
+}
+
+.msg {
+  font-size: 30rpx;
+}
+
+.notification {
+  color: blue;
+}
+
+.nick_update {
+  color: green;
+}
+
+.reward_congradulation {
+  color: red;
+}
+
+.common {
+  color: black;
+}
+
+.fail {
+  color: red;
+}
+
+.reward-container {
+  margin-top: 50rpx;
+  width: 80%; height: 300rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+.user-list {
+  width: 50%; height: 100%;
+  background: lightblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  font-size: 28rpx;
+  border: 2px solid gray;
+  overflow: scroll;
+}
+.btn-list {
+  width: 50%; height: 100%;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+}
+.user-title {
+  font-size: 36rpx;
+  color: white;
+  border-bottom: 1px solid blanchedalmond;
+  margin-bottom: 15rpx;
+}
+.btn-refresh, .btn-reward {
+  margin: auto 0;
+  width: 120rpx;
+  height: 120rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  border-radius: 50%;
+  font-weight: bold;
+  font-family: "Microsoft YaHei"
+}
+.btn-reward {
+  background: gold;
+  color: white;
+  border: 2px solid burlywood;
+}
+
+.btn-refresh {
+  background: blue;
+  color: white;
+  border: 2px solid lightblue;
+}
+
+.chosed {
+  background: gray;
+}
+
+.notes {
+  font-size: 30rpx;
+  margin: -40rpx 0 20rpx; 
+  color: red;
+}

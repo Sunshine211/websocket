@@ -1,0 +1,35 @@
+<view class="container">
+  <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+  <block wx:else>
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </block>
+
+  <scroll-view class='log-box' scroll-y="true" scroll-top="{{scrollTop}}">
+    <view class="msg {{item.style}}" wx:for="{{msgs}}" id="{{vid}}">{{item.msg_txt}}</view>
+  </scroll-view>
+
+  <text class='notes'>（输入“#改名(空格)新昵称”修改昵称）</text>
+
+  <form bindsubmit="formSubmit">
+    <view class="form-container">
+      <input type="text" id="msg" name="msg" placeholder="请输入信息" value="{{txt_val}}"/>
+      <button formType="submit" class="btn-send">发送</button>    
+    </view>
+  </form>
+
+  <view class='reward-container'>
+    <view class='user-list'>
+      <text class='user-title'>在线用户</text>
+      <text wx:for="{{users}}" class='{{item.style}}' bindtap='chooseUser' data-index="{{index}}" data-id="{{item.id}}">{{item.nickname}}</text>
+    </view>
+    <view class='btn-list'>
+      <view class='btn-refresh' bindtap='refresh'>刷新</view>
+      <view class='btn-reward' bindtap='rewardOne'>打赏</view>    
+    </view>
+  </view>
+
+  
+</view>
+
+
